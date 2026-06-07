@@ -83,11 +83,12 @@ Read [references/qa-checklist.md](references/qa-checklist.md) before final deliv
 Example verification:
 
 ```powershell
+$expectedSlides = [int](Read-Host "Enter the caller-specified target slide count")
 python scripts/verify_outputs.py `
   --pptx "output/deck.pptx" `
   --images-dir "output/逐页图片" `
   --collage "output/deck_拼图.png" `
-  --expected-slides 20
+  --expected-slides $expectedSlides
 ```
 
 ## Quality Bar
