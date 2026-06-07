@@ -1,0 +1,7 @@
+interface:
+  display_name: "PPT模板拼图生成器"
+  short_description: "Build template-matched PPTX, slide images, and collage"
+  default_prompt: "Use $ppt-template-collage-builder with my source materials, specified PPT template, and specified slide count to create a polished deck, per-slide PNGs, and a collage."
+
+policy:
+  allow_implicit_invocation: true
