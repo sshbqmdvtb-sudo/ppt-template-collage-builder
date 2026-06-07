@@ -1,41 +1,43 @@
-# Content and Layout Guide
+# Word Outline and Slide Planning
 
-## Source Compression
+## Word Outline Structure
 
-- Extract the chapter or document structure first.
+Create the outline as a production specification, not a loose topic list.
+
+Include:
+
+1. Project brief: audience, objective, source scope, slide count, style, and template
+2. Narrative arc: sections and the role of each section
+3. Slide plan: one numbered entry per slide
+4. Source notes and unresolved questions
+
+For every slide entry include:
+
+- Slide number
+- Claim-style title
+- Communication purpose
+- Key content and source
+- Intended visual composition
+- Planned editable elements: text, table, chart, formula, shape, image, or diagram
+- Expected raster assets to extract
+
+## Content Compression
+
+- Extract the source structure before drafting.
 - Convert paragraphs into claims, mechanisms, comparisons, processes, or examples.
-- Keep each slide focused on one answerable question.
-- Prefer 3-5 concise points over paragraph-sized text.
-- Preserve source terminology when accuracy matters.
-
-## Example 20-Slide Pattern
-
-Use this only when the caller requests 20 slides. For other slide counts, scale the structure while preserving a cover, clear sections, synthesis, and closing.
-
-1. Cover
-2. Agenda
-3. Section opener
-4-8. Concepts, system, technologies, or background
-9. Section opener
-10-16. Applications, cases, mechanisms, or training areas
-17. Products, implementation, or evidence
-18. Challenges and opportunities
-19. Summary and outlook
-20. Closing
+- Keep each slide focused on one primary message.
+- Prefer 3-5 concise supporting points over paragraph-sized text.
+- Preserve exact terminology, numbers, formulas, and citations when accuracy matters.
+- Keep a reliable text source outside the design images so reconstruction does not depend on OCR.
 
 ## Layout Selection
 
 - Use cover and closing layouts only for their intended roles.
-- Use section openers to create pacing between dense sections.
-- Use cards for parallel categories.
-- Use timelines for evolution or process.
-- Use comparison layouts only when dimensions are genuinely comparable.
-- Use charts only when the source supplies meaningful quantitative data.
+- Use section openers to create pacing.
+- Use cards for genuinely parallel categories.
+- Use timelines for evolution or sequence.
+- Use comparison layouts only for comparable dimensions.
+- Use charts only when meaningful quantitative data exists.
 - Use image-led layouts for examples and applications.
 
-## Template Fidelity
-
-- Prefer cloning an existing layout over recreating it.
-- Preserve original coordinates and sizing when replacing content.
-- Keep title, subtitle, body, and footer hierarchy consistent.
-- Reuse template images when they are decorative; replace them when they carry semantic meaning that conflicts with the new topic.
+When a template is supplied, clone or inherit its layout families. When no template is supplied, establish one coherent visual system before generating canonical images.

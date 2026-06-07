@@ -1,7 +1,7 @@
 interface:
-  display_name: "PPT模板拼图生成器"
-  short_description: "根据调用者指定的素材、PPT模板和页数生成演示文稿、逐页图片及拼图"
-  default_prompt: "使用 $ppt-template-collage-builder，根据我提供的素材、PPT模板和指定页数，生成完整PPT、逐页PNG图片和拼图。"
+  display_name: "PPT图片拆解与可编辑重建"
+  short_description: "先生成Word大纲和逐页效果图，再拆解素材并还原为可编辑PPT"
+  default_prompt: "使用 $ppt-template-collage-builder，根据我的要求、文件、指定PPT模板和指定页数，先生成Word汇报大纲与逐页PPT效果图，再逐页拆解并还原为可编辑PPT。"
 
 policy:
   allow_implicit_invocation: true

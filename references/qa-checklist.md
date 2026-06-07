@@ -1,28 +1,46 @@
 # Final QA Checklist
 
+## Outline
+
+- Word outline exists, opens, and has been rendered to images.
+- Every outline page was visually inspected.
+- Outline slide entries match the requested slide count.
+- Each slide entry records content, source, visual plan, and editable element plan.
+
 ## Package
 
-- PPTX exists and opens.
-- PPTX slide count matches the request.
-- Per-slide PNG count matches the PPTX slide count.
+- Canonical design PNG count matches the requested slide count.
+- Reconstruction manifest slide count matches.
+- Editable PPTX slide count matches.
+- Final-render PNG count matches.
 - No PNG is empty or corrupt.
-- Collage exists, is readable, and preserves slide order.
+- Canonical-image collage exists and preserves slide order.
+- Extracted raster assets are present and reusable.
 
-## Visual Review
+## Editability
 
-- Cover title is readable and does not wrap awkwardly.
-- Section transitions are visually clear.
-- Titles, subtitles, and footers are consistent.
-- No clipped, overflowing, orphaned, or hidden text.
-- No accidental overlaps or elements extending beyond the canvas.
-- Dense slides remain readable at presentation scale.
-- Images are not distorted, pixelated, or semantically misleading.
-- Collage shows coherent pacing and sufficient layout variety.
+- No slide consists only of one flattened full-slide image.
+- Text is editable text, not baked into a background image.
+- Tables are native editable tables when feasible.
+- Charts and diagrams use native objects or editable primitives.
+- Formulas remain editable or have an explicitly approved and documented exception.
+- Photos and complex visuals are separate movable/croppable PNG objects.
+
+## Per-Slide Fidelity
+
+Compare every canonical image against its final PPT render:
+
+- Same content and element count
+- Same visual hierarchy and reading order
+- Matching position, size, crop, rotation, and z-order
+- Matching typography, line breaks, alignment, and color
+- No clipping, overflow, overlaps, missing glyphs, or transcription errors
+- No distorted, low-resolution, or incorrectly extracted images
 
 ## Template Review
 
-- Canvas size and aspect ratio match the template.
-- Fonts, colors, decorations, and margins remain consistent.
-- Template layout families are reused appropriately.
-- Added elements do not introduce a conflicting visual language.
-- Template-fidelity validation passes or accepted deviations are documented.
+When a template is supplied:
+
+- Canvas size, fonts, colors, decorations, margins, and footer behavior match.
+- Reconstructed slides feel native to the template.
+- Added objects do not introduce a conflicting visual language.
